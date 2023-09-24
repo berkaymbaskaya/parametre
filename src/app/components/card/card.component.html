@@ -1,0 +1,19 @@
+<div class="row justify-content-center">
+<div class="card" style="width: 18rem; margin:1rem" *ngFor="let item of userData">  
+    <img style="border-radius: 10px;" src={{item.avatar_url}} class="card-img-top mt-2" alt="avatar">
+    <div class="card-body">
+      <h5 class="card-title">@{{item.login}}</h5>
+      <p class="card-text">Bio:{{item.bio}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Ad:{{item.name}}</li>
+      <li class="list-group-item">Takipçi: {{item.followers}}</li>
+      <li class="list-group-item">Takip Edilen: {{item.following}}</li>
+      <li class="list-group-item">Repo Sayısı: {{item.public_repos}} </li>
+      <li class="list-group-item">Üyelik Tarihi: {{item.created_at}} </li>
+    </ul>
+    <div class="card-body text-center">
+      <a class="btn btn-dark m-3" href={{item.html_url}} target="_blank" role="button">Profili Görünttüle</a>
+    </div>
+  </div>
+  </div>
