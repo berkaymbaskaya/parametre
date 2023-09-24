@@ -10,7 +10,7 @@ export class DataService {
   apiBaseUrl:string='https://api.github.com/users/';
   token:string='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'
   headers = new HttpHeaders({
-    'Authorization': `Bearer ${this.token}`
+    // 'Authorization': `Bearer ${this.token}`
   });
   constructor(private http: HttpClient) { }
   //Return username from local json file
